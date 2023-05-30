@@ -1,0 +1,1 @@
+web: gunicorn dolar.wsgi --log-file -
