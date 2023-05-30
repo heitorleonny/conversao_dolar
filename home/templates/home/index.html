@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title>Preço do Dólar</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
+</head>
+
+<body>
+    <h1>Preço do Dólar</h1>
+    <div id="dolar-price">
+        <h2>R${{ valor_dolar }}</h2>
+    </div>
+
+    <div id="dolar-price">
+        {% if conversao %}
+        <p>R${{valor_usuario}} é igual a ${{conversao}}</p>
+        {% elif valor_usuario %}
+        <p>{{valor_usuario}}<p></p>
+        {% else %}
+        <p>R${{1}} é igual a ${{valor_dolar}}</p>
+        {% endif %}
+    </div>
+
+    <h2>Simular Conversão</h2>
+    <form action="{% url 'conversao' %}" method="post">
+        <input type="text" name="valor"> {% csrf_token %}
+        <button type="submit">Calcular</button>
+    </form>
+
+</html>
