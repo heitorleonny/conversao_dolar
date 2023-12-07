@@ -8,7 +8,7 @@
 2. [Configuração](#configuração)
    - [Instalação](#instalação)
    - [Configuração do Ambiente](#configuração-do-ambiente)
-3. [Estrutura de Diretórios](#estrutura-de-diretórios)
+3. [Dúvidas e Contribuições](#dúvidas-e-contribuições)
 4. [Referências e Links Úteis](#referências-e-links-úteis)
 
 ## Visão Geral
